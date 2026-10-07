@@ -1,0 +1,61 @@
+* {
+    background-color: azure;
+}
+
+.box1 {
+    width: 260px;
+    padding: 20px;
+    height: 100px;
+    margin: 10px;
+    background-color: red;
+}
+
+.box2 {
+    width: 260px;
+    padding: 20px;
+    height: 100px;
+    margin: 10px;
+    background-color: green;
+}
+
+.box3 {
+    width: 260px;
+    padding: 20px;
+    height: 100px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.box4 {
+    width: 260px;
+    padding: 20px;
+    height: 100px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+/* This box ends up 340px wide - why? Fix it! */
+.broken-box {
+    width: 260px;
+    padding: 20px;
+    border: none;
+    height: 100px;
+    margin: 10px;
+    background-color: pink;
+}
+
+.card {
+    width: 260px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+}
+
+.card img {
+    width: 260px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
