@@ -34,7 +34,6 @@
     background-color: yellow;
 }
 
-/* This box ends up 340px wide - why? Fix it! */
 .broken-box {
     width: 260px;
     padding: 20px;
