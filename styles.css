@@ -2,26 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playwrite CA Guides", cursive;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: red;
+    color: #263238;
+    background-color: #f8fafc;
 }
 
-h1{
-    font-size: 25px;
-    margin: 15px;
-    font-weight: bold 400;
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-h2{
-    font-size: 20px;
-    margin:  10px;
-    font-weight: bold 350;
+h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
-h3{
-    font-size: 15px;
-    margin: 5px;
-    font-weight: bold 300;
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
 }
