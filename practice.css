@@ -1,0 +1,191 @@
+.box {
+  background-color: #cfe2ff;      
+  width: 260px;
+}
+
+.box-padding {
+  padding: 30px;
+}
+
+.box-border {
+  padding: 30px;
+  border: 5px solid var(--color-primary);
+}
+
+.box-margin {
+  padding: 30px;
+  border: 5px solid var(--color-secondary);
+  margin: 30px 0;
+}
+
+.broken-box {
+  width: 300px;
+  padding: 20px;
+  border: none;
+  background: #f8d7da;
+  box-sizing: content-box;         
+  margin-bottom: 1rem;
+}
+
+.fixed-box {
+  width: 300px;
+  padding: 20px;
+  border: none;
+  background: #d1e7dd;
+  box-sizing: border-box;         
+}
+
+.practice-card {
+  width: 300px;                    
+  padding: 20px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.practice-card img {
+  width: calc(100% + 40px);
+  max-width: none;
+  margin: -20px -20px 15px -20px;
+}
+
+.practice-card h3 {
+  margin-bottom: 15px;             
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;             
+  padding: 1rem 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+.flex-nav-logo { font-weight: 700; font-size: var(--font-xl); }
+.flex-nav-links { display: flex; gap: 1.5rem; }       
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;                 
+  gap: 1.5rem;                     
+  margin-bottom: 2rem;
+}
+.mini-card {
+  flex: 1 1 250px;                 
+  background: var(--color-white);
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.flex-footer {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+.flex-footer h4 { color: var(--color-white); }
+.flex-footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.flex-footer-columns > div { flex: 1 1 180px; }
+.flex-footer-copy {
+  text-align: center;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;                      
+  border-radius: var(--radius);
+}
+
+.magazine {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "sidebar main"
+    "footer  footer";
+  margin-bottom: 2rem;
+}
+.magazine > * {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: #cfe2ff;
+}
+.mag-header  { grid-area: header; background: var(--color-primary); color: var(--color-white); }
+.mag-sidebar { grid-area: sidebar; min-height: 200px; }
+.mag-main    { grid-area: main; background: var(--color-white); border: 1px solid var(--color-border); }
+.mag-footer  { grid-area: footer; background: var(--color-primary-dark); color: var(--color-white); }
+
+@media (max-width: 600px) {
+  .magazine {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-full {
+  min-height: 100vh;
+  min-height: 100svh;                 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--color-white);
+  background:
+    linear-gradient(rgba(20, 30, 45, 0.65), rgba(20, 30, 45, 0.65)),
+    url("https://picsum.photos/1600/900?random=41") center / cover no-repeat;
+}
+.hero-full-content { max-width: 700px; }
+.hero-full h1 {
+  color: var(--color-white);
+  font-size: 2.25rem;
+}
+.hero-full p { font-size: var(--font-lg); margin-bottom: 1.5rem; }
+
+.btn-light {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-primary-dark);
+}
+.btn-light:hover {
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .hero-full h1 { font-size: 3.5rem; }
+}

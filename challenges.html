@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Challenges</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+
+  <section class="hero-full">
+    <div class="hero-full-content">
+      <h1>Build. Style. Ship.</h1>
+      <p>A full-viewport hero with an image overlay, centered text and a call to action.</p>
+      <a href="#day-1" class="btn btn-light">Start exploring</a>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <section id="day-1">
+      <h2>Day 1: Button Styles</h2>
+      <div class="button-row">
+        <button class="btn">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn" disabled>Disabled</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Day 2: Card Component</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="https://picsum.photos/600/360?random=31" alt="Sample project image">
+          <div class="card-body">
+            <h3>Card Title</h3>
+            <p>A reusable card with an image, title, description, tags and a call-to-action button.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Design</li></ul>
+            <a href="#" class="btn">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Day 4: Form Styling</h2>
+      <form class="form" action="#" method="post" style="max-width: 500px;">
+        <div class="form-group">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email (type something invalid to see the error state)</label>
+          <input type="email" id="c-email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" rows="4" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>About</h3>
+          <p>Short description of who you are and what you do.</p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-list">
+            <li>you@example.com</li>
+            <li>Nairobi, Kenya</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <ul class="footer-list">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 YourName. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
